@@ -10,17 +10,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_07_01_015721) do
+ActiveRecord::Schema.define(version: 2021_07_03_231339) do
 
   create_table "plants", force: :cascade do |t|
     t.string "nickname"
     t.string "name"
-    t.string "care_level"
     t.string "light"
     t.string "water"
     t.string "soil"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.string "difficulty"
   end
 
 end
